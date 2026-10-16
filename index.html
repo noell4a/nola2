@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sora Coffee | Kedai kopi seperti langit</title>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Gambar cangkir & awan (dipakai berulang lewat <use>) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="cup" viewBox="0 0 100 100">
+        <ellipse cx="48" cy="89" rx="34" ry="6" fill="#86b6d8" stroke="#2b211b" stroke-width="3"/>
+        <path d="M72 48h5a9 9 0 0 1 0 18h-7" fill="none" stroke="#2b211b" stroke-width="3" stroke-linecap="round"/>
+        <path d="M21 42h52v17a26 26 0 0 1-26 26 26 26 0 0 1-26-26z" fill="#faf6ef" stroke="#2b211b" stroke-width="3"/>
+        <ellipse cx="47" cy="42" rx="26" ry="6" fill="currentColor" stroke="#2b211b" stroke-width="3"/>
+        <path d="M38 32c-5 0-7-6-3-9 1-5 8-6 11-2 3-4 10-3 11 2 5 1 5 9 0 9z" fill="#fff" stroke="#2b211b" stroke-width="2.5" stroke-linejoin="round"/>
+        <circle cx="38" cy="62" r="2.8" fill="#2b211b"/><circle cx="56" cy="62" r="2.8" fill="#2b211b"/>
+        <ellipse cx="31" cy="68" rx="4" ry="2.6" fill="#f4b8a4"/><ellipse cx="63" cy="68" rx="4" ry="2.6" fill="#f4b8a4"/>
+        <path d="M43 67q4 5 8 0" fill="none" stroke="#2b211b" stroke-width="2.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="awan" viewBox="0 0 120 60">
+        <path d="M24 56a20 20 0 0 1 3-40 26 26 0 0 1 49-5 22 22 0 0 1 22 21 17 17 0 0 1-3 24z"/>
+    </symbol>
+</svg>
+
+<!-- ============ HEADER & NAVIGATION ============ -->
+<header class="site-header">
+    <div class="header-inner">
+        <a href="#home" class="brand">
+            <img src="images/logo.svg" alt="Logo Sora Coffee" width="36" height="36">
+            <span>sora<em>.</em></span>
+        </a>
+        <nav aria-label="Navigasi utama">
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#pesan">Pesan</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+        <a href="#pesan" class="btn btn-primary btn-small">Pesan Sekarang</a>
+    </div>
+</header>
+
+<main>
+
+<!-- ============ HOME ============ -->
+<section id="home" class="hero">
+    <div class="matahari" aria-hidden="true"></div>
+    <svg class="awan a1" viewBox="0 0 120 60" aria-hidden="true"><use href="#awan"/></svg>
+    <svg class="awan a2" viewBox="0 0 120 60" aria-hidden="true"><use href="#awan"/></svg>
+    <svg class="awan a3" viewBox="0 0 120 60" aria-hidden="true"><use href="#awan"/></svg>
+
+    <div class="wrap hero-inner">
+        <div>
+            <span class="eyebrow">☁️ kedai kopi ala langit</span>
+            <h1>Mampir ke langit,<br><span class="garis">seduh bareng Sora.</span></h1>
+            <p class="lead">Sora (空) artinya langit. Di sini kopinya hangat, susunya selembut awan, dan waktunya boleh berjalan pelan.</p>
+            <div class="actions">
+                <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+                <a href="#pesan" class="btn btn-ghost">Pesan Sora Box</a>
+            </div>
+            <div class="chips">
+                <span class="chip">☕ 6 menu seduhan</span>
+                <span class="chip">💸 mulai Rp 18rb</span>
+                <span class="chip">🎓 diskon mahasiswa</span>
+            </div>
+        </div>
+
+        <div class="stage">
+            <div class="stage-blob"></div>
+            <span class="spark s1" aria-hidden="true">✦</span>
+            <span class="spark s2" aria-hidden="true">✦</span>
+            <div class="bubble-hi">Halo, aku Sora!</div>
+            <div class="mascot"><svg viewBox="0 0 100 100" style="color:#d2a679" role="img" aria-label="Maskot Sora, cangkir kopi yang tersenyum"><use href="#cup"/></svg></div>
+            <div class="mini m1"><svg viewBox="0 0 100 100" style="color:#8fc15f" aria-hidden="true"><use href="#cup"/></svg></div>
+            <div class="mini m2"><svg viewBox="0 0 100 100" style="color:#b79be6" aria-hidden="true"><use href="#cup"/></svg></div>
+        </div>
+    </div>
+
+    <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 35C200 75 420 0 700 30S1200 75 1440 25V70H0Z" fill="#faf6ef"/></svg>
+</section>
+
+<div class="pita-wrap" aria-hidden="true"><div class="pita">
+    <div class="pita-track"><span>☁️ seduh pelan</span><span>☕ minum santai</span><span>🎓 diskon mahasiswa 10%</span><span>☁️ ngobrol lama</span><span>✨ wifi kencang</span><span>☕ buka tiap hari</span><span>☁️ seduh pelan</span><span>☕ minum santai</span><span>🎓 diskon mahasiswa 10%</span><span>☁️ ngobrol lama</span><span>✨ wifi kencang</span><span>☕ buka tiap hari</span><span>☁️ seduh pelan</span><span>☕ minum santai</span><span>🎓 diskon mahasiswa 10%</span><span>☁️ ngobrol lama</span><span>✨ wifi kencang</span><span>☕ buka tiap hari</span><span>☁️ seduh pelan</span><span>☕ minum santai</span><span>🎓 diskon mahasiswa 10%</span><span>☁️ ngobrol lama</span><span>✨ wifi kencang</span><span>☕ buka tiap hari</span></div>
+</div></div>
+
+<!-- ============ MENU (form GET -> proses.php) ============ -->
+<section id="menu" class="section">
+    <div class="wrap">
+        <h2 class="title">Menu favorit</h2>
+        <span class="squiggle"></span>
+        <p class="subtitle">Pilih satu, atau pilih semuanya. Kami nggak akan menghakimi.</p>
+
+        <form action="proses.php" method="get" class="search">
+            <label for="q" class="sr-only">Cari menu</label>
+            <input type="text" id="q" name="q" placeholder="Cari menu, mis. latte">
+            <button type="submit" class="btn btn-primary">Cari</button>
+        </form>
+
+        <div class="cards">
+            <article class="card">
+                <span class="badge">Rp 18.000</span>
+                <div class="card-cup"><svg viewBox="0 0 100 100" style="color:#6b4228" role="img" aria-label="Cangkir Sora Espresso"><use href="#cup"/></svg></div>
+                <h3>Sora Espresso</h3>
+                <p>Double shot pekat, manis seperti karamel.</p>
+                <a href="#pesan" class="btn btn-sky btn-small">+ Pesan</a>
+            </article>
+            <article class="card">
+                <span class="badge">Rp 28.000</span>
+                <div class="card-cup"><svg viewBox="0 0 100 100" style="color:#d2a679" role="img" aria-label="Cangkir Kumo Latte"><use href="#cup"/></svg></div>
+                <h3>Kumo Latte</h3>
+                <p>Espresso + susu lembut, seringan awan.</p>
+                <a href="#pesan" class="btn btn-sky btn-small">+ Pesan</a>
+            </article>
+            <article class="card">
+                <span class="badge">Rp 26.000</span>
+                <div class="card-cup"><svg viewBox="0 0 100 100" style="color:#c07a3a" role="img" aria-label="Cangkir Aren Sora"><use href="#cup"/></svg></div>
+                <h3>Aren Sora</h3>
+                <p>Es kopi susu gula aren, favorit semua orang.</p>
+                <a href="#pesan" class="btn btn-sky btn-small">+ Pesan</a>
+            </article>
+            <article class="card">
+                <span class="badge">Rp 30.000</span>
+                <div class="card-cup"><svg viewBox="0 0 100 100" style="color:#8fc15f" role="img" aria-label="Cangkir Matcha Cloud"><use href="#cup"/></svg></div>
+                <h3>Matcha Cloud</h3>
+                <p>Matcha creamy, sedikit pahit, banyak happy.</p>
+                <a href="#pesan" class="btn btn-sky btn-small">+ Pesan</a>
+            </article>
+            <article class="card">
+                <span class="badge">Rp 27.000</span>
+                <div class="card-cup"><svg viewBox="0 0 100 100" style="color:#b79be6" role="img" aria-label="Cangkir Taro Dream"><use href="#cup"/></svg></div>
+                <h3>Taro Dream</h3>
+                <p>Taro ungu manis, wajib difoto dulu.</p>
+                <a href="#pesan" class="btn btn-sky btn-small">+ Pesan</a>
+            </article>
+            <article class="card">
+                <span class="badge">Rp 29.000</span>
+                <div class="card-cup"><svg viewBox="0 0 100 100" style="color:#ff8fb1" role="img" aria-label="Cangkir Strawberry Latte"><use href="#cup"/></svg></div>
+                <h3>Strawberry Latte</h3>
+                <p>Susu stroberi + espresso, pink dan segar.</p>
+                <a href="#pesan" class="btn btn-sky btn-small">+ Pesan</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ============ KENAPA SORA ============ -->
+<section class="section section-sky">
+    <div class="wrap duo">
+        <div>
+            <h2 class="title">Kenapa pilih Sora?</h2>
+            <span class="squiggle"></span>
+            <div class="bubbles">
+                <div class="bubble"><span class="ico">☁️</span><strong>Seduh segar setiap hari</strong><span>Biji disangrai medium, diseduh saat kamu pesan.</span></div>
+                <div class="bubble"><span class="ico">🎓</span><strong>Harga ramah kantong</strong><span>Mulai Rp 18.000, diskon 10% untuk mahasiswa.</span></div>
+                <div class="bubble"><span class="ico">🛋️</span><strong>Tempat yang nyaman</strong><span>Cocok buat nugas, ngobrol, atau sekadar melamun.</span></div>
+            </div>
+        </div>
+
+        <div class="papan">
+            <h3>Jam buka Sora</h3>
+            <table>
+                <tbody>
+                    <tr><td>Senin – Kamis</td><td>08.00 – 22.00</td></tr>
+                    <tr><td>Jumat – Sabtu</td><td>08.00 – 23.00</td></tr>
+                    <tr><td>Minggu</td><td>09.00 – 21.00</td></tr>
+                </tbody>
+            </table>
+            <p>Datang kapan saja, langit selalu ada ☁️</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ PESAN (form POST -> proses.php) ============ -->
+<section id="pesan" class="section">
+    <div class="wrap pesan-grid">
+        <div class="pesan-info">
+            <div class="bubble-say">Mau pesan apa hari ini?</div>
+            <div class="mascot-kecil"><svg viewBox="0 0 100 100" style="color:#ff8fb1" role="img" aria-label="Maskot Sora"><use href="#cup"/></svg></div>
+            <ol class="langkah">
+                <li>Isi nama dan pilih tipe pesanan</li>
+                <li>Tentukan menu dan jumlahnya</li>
+                <li>Klik hitung, total langsung muncul</li>
+            </ol>
+        </div>
+
+        <form action="proses.php" method="post" class="form">
+            <h2 class="title">Nota pesanan</h2>
+            <input type="hidden" name="aksi" value="pesan">
+
+            <div class="field">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama kamu">
+            </div>
+
+            <fieldset class="field">
+                <legend>Tipe pesanan</legend>
+                <label class="opt"><input type="radio" name="tipe" value="Dine In"> Dine In</label>
+                <label class="opt"><input type="radio" name="tipe" value="Take Away"> Take Away</label>
+            </fieldset>
+
+            <fieldset class="field">
+                <legend>Pilih menu &amp; jumlah</legend>
+                <div class="row">
+                    <label for="m-espresso">Sora Espresso<small>Rp 18.000</small></label>
+                    <input type="number" id="m-espresso" name="jumlah[espresso]" min="0" max="20" value="0">
+                </div>
+                <div class="row">
+                    <label for="m-latte">Kumo Latte<small>Rp 28.000</small></label>
+                    <input type="number" id="m-latte" name="jumlah[latte]" min="0" max="20" value="0">
+                </div>
+                <div class="row">
+                    <label for="m-aren">Aren Sora<small>Rp 26.000</small></label>
+                    <input type="number" id="m-aren" name="jumlah[aren]" min="0" max="20" value="0">
+                </div>
+                <div class="row">
+                    <label for="m-matcha">Matcha Cloud<small>Rp 30.000</small></label>
+                    <input type="number" id="m-matcha" name="jumlah[matcha]" min="0" max="20" value="0">
+                </div>
+                <div class="row">
+                    <label for="m-taro">Taro Dream<small>Rp 27.000</small></label>
+                    <input type="number" id="m-taro" name="jumlah[taro]" min="0" max="20" value="0">
+                </div>
+                <div class="row">
+                    <label for="m-berry">Strawberry Latte<small>Rp 29.000</small></label>
+                    <input type="number" id="m-berry" name="jumlah[berry]" min="0" max="20" value="0">
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="catatan">Catatan (opsional)</label>
+                <textarea id="catatan" name="catatan" rows="3" placeholder="Mis. less sugar, extra ice"></textarea>
+            </div>
+
+            <label class="opt"><input type="checkbox" name="mahasiswa"> Saya mahasiswa (diskon 10%)</label>
+
+            <button type="submit" class="btn btn-primary">Hitung &amp; Kirim Pesanan</button>
+        </form>
+    </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section id="blog" class="section section-sky">
+    <div class="wrap">
+        <h2 class="title">Kartu pos dari Sora</h2>
+        <span class="squiggle"></span>
+        <div class="blog">
+            <article class="blog-card">
+                <span class="perangko" aria-hidden="true">☕</span>
+                <h3>Kenapa Kopi Aren Selalu Menang?</h3>
+                <p>Manisnya pas, aromanya khas. Ini alasan Aren Sora jadi menu paling laris.</p>
+            </article>
+            <article class="blog-card">
+                <span class="perangko" aria-hidden="true">🏠</span>
+                <h3>5 Tips Seduh Kopi Enak di Kos</h3>
+                <p>Tanpa mesin mahal pun bisa. Cukup air panas, timbangan, dan sedikit sabar.</p>
+            </article>
+            <article class="blog-card">
+                <span class="perangko" aria-hidden="true">📚</span>
+                <h3>Spot Nugas Ternyaman di Sora</h3>
+                <p>Colokan banyak, wifi kencang, dan kursi yang nggak bikin pegal.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER / KONTAK ============ -->
+<footer id="kontak" class="footer">
+    <div class="wrap footer-grid">
+        <div>
+            <h3>Sora Coffee</h3>
+            <p>Secangkir langit untuk harimu, di Surabaya.</p>
+            <div class="actions">
+                <a href="https://wa.me/628113343737" class="btn btn-sky btn-small">Chat WhatsApp</a>
+                <a href="https://instagram.com/sora.coffee" class="btn btn-ghost btn-small">Instagram</a>
+            </div>
+        </div>
+
+        <div>
+            <h3>Dapatkan info promo</h3>
+            <form action="proses.php" method="post" class="promo">
+                <input type="hidden" name="aksi" value="promo">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@email.com">
+                <button type="submit" class="btn btn-sky btn-small">Daftar Promo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Page View Counter: angkanya diambil dari proses.php (PHP) -->
+    <p class="counter">Total Page Views: <span id="views">...</span></p>
+    <p class="copy">&copy; 2026 Sora Coffee. UTS Pemrograman Web.</p>
+</footer>
+
+<script>
+    // Ambil angka Page View Counter dari proses.php (PHP menambah 1 tiap halaman dibuka)
+    fetch('proses.php?counter=1', { cache: 'no-store' })
+        .then(function (r) { return r.text(); })
+        .then(function (angka) { document.getElementById('views').textContent = angka; })
+        .catch(function () { document.getElementById('views').textContent = '-'; });
+</script>
+
+</body>
+</html>
